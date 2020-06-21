@@ -1,0 +1,19 @@
+docker run -it -v ${PWD}:/home sequenceiq/hadoop-docker:latest /etc/bootstrap.sh -bash
+
+ls /home
+
+cd $HADOOP_PREFIX
+
+bin/hadoop fs -mkdir shakespeare
+
+bin/hadoop fs -put /home/shakespeare/* shakespeare
+
+bin/hadoop fs -ls shakespeare
+
+bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.7.0.jar -file /home/mapper.py -mapper /home/mapper.py -file /home/reducer.py -reducer /home/reducer.py -input shakespeare -output output -numReduceTasks 4
+
+bin/hadoop fs -ls output
+
+bin/hadoop fs -cat output/part-00000 | head -10
+
+bin/hadoop fs -cat output/* | sort -n -k2 -r | head -10

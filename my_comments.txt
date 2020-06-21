@@ -1,0 +1,7 @@
+# what files belong in DFS?
+1. Large (terabyte)
+2. Rarely updated (updating is a headache)
+
+# why do we want a smaller number of reducers?
+1. I/O or communication cost, each reducer receives and actual files
+2. Skewed data
