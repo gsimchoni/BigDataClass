@@ -13017,45 +13017,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
 
 
 <style type="text/css">
@@ -13116,7 +13077,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&quot;Big&quot;-Data-Science">"Big" Data Science<a class="anchor-link" href="#&quot;Big&quot;-Data-Science">&#182;</a></h1><h3 id="Guest-Lecture-in-Introduction-to-Data-Science-at-TAU-/-Prof.-Saharon-Rosset">Guest Lecture in Introduction to Data Science at TAU / Prof. Saharon Rosset<a class="anchor-link" href="#Guest-Lecture-in-Introduction-to-Data-Science-at-TAU-/-Prof.-Saharon-Rosset">&#182;</a></h3><h3 id="Giora-Simchoni">Giora Simchoni<a class="anchor-link" href="#Giora-Simchoni">&#182;</a></h3><h3 id="June-4th,-2019">June 4th, 2019<a class="anchor-link" href="#June-4th,-2019">&#182;</a></h3>
+<h3 id="&quot;Big&quot;-Data-Science">"Big" Data Science<a class="anchor-link" href="#&quot;Big&quot;-Data-Science">&#182;</a></h3><h3 id="Guest-Lecture-in-Introduction-to-Data-Science-at-TAU-/-Prof.-Saharon-Rosset">Guest Lecture in Introduction to Data Science at TAU / Prof. Saharon Rosset<a class="anchor-link" href="#Guest-Lecture-in-Introduction-to-Data-Science-at-TAU-/-Prof.-Saharon-Rosset">&#182;</a></h3><h3 id="Giora-Simchoni">Giora Simchoni<a class="anchor-link" href="#Giora-Simchoni">&#182;</a></h3><h3 id="June-23rd,-2020">June 23rd, 2020<a class="anchor-link" href="#June-23rd,-2020">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13126,7 +13087,7 @@ div#notebook {
 <h1 id="What-is-Small?-What-is-Big?">What is Small? What is Big?<a class="anchor-link" href="#What-is-Small?-What-is-Big?">&#182;</a></h1><p>These definitions are constantly changing.</p>
 <p>(1) "Everything processed in Excel is small data." (<a href="https://www.theguardian.com/news/datablog/2013/apr/25/forget-big-data-small-data-revolution">Rufus Pollock, The Guardian</a>)</p>
 <p>(2) "[Big Data] is data so large it does not fit in main memory" (Leskovec et al., Mining of Massive Datasets)</p>
-<p>Or maybe we should define the size of our data according how easy it is to process and understand it?</p>
+<p>Or maybe we should define the size of our data according to how easy it is to process and understand it?</p>
 <p>(3) "[Small Data is] data that has small enough size for human comprehension." (<a href="jWork.ORG">jWork.ORG</a>)</p>
 <p>(4) "data sets that are too large or complex for traditional data-processing application software to adequately deal with" (<a href="https://en.wikipedia.org/wiki/Big_data">Wikipedia</a>)</p>
 <p>We'll talk about solutions to (2) and (4) today.</p>
@@ -13153,14 +13114,14 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Distributed-File-System-(DFS)">Distributed File System (DFS)<a class="anchor-link" href="#Distributed-File-System-(DFS)">&#182;</a></h1><ul>
-<li><p>Typically: <a href="https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html">HDFS (Hadoop Distributed File System)</a>, another open source project by <a href="https://www.apache.org/">Apache</a></p>
+<li><p>Typically: <a href="https://hadoop.apache.org/">HDFS (Hadoop Distributed File System)</a>, another open source project by <a href="https://www.apache.org/">Apache</a></p>
 </li>
 <li><p>"Computers" (nodes) are stacked in racks of 8-64 size each.</p>
 </li>
 <li><p>Nodes on the same rack are connected, and racks are connected by a network or "switch"</p>
 </li>
 </ul>
-<p><img src = "images/computer_cluster.png"></p>
+<p><img src = "./images/computer_cluster.png"></p>
 
 </div>
 </div>
@@ -13680,10 +13641,10 @@ DUMP X;
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark</span> <span class="k">import</span> <span class="n">SparkContext</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark</span> <span class="kn">import</span> <span class="n">SparkContext</span>
 
 <span class="n">sc</span> <span class="o">=</span> <span class="n">SparkContext</span><span class="p">()</span>
-<span class="n">rdd</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">parallelize</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+<span class="n">rdd</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">parallelize</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="mi">4</span><span class="p">)</span>
 <span class="n">rdd</span>
 </pre></div>
 
@@ -13703,7 +13664,7 @@ DUMP X;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>ParallelCollectionRDD[0] at parallelize at PythonRDD.scala:195</pre>
+<pre>ParallelCollectionRDD[0] at readRDDFromFile at PythonRDD.scala:262</pre>
 </div>
 
 </div>
@@ -14193,7 +14154,7 @@ DUMP X;
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">shakespeare</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">textFile</span><span class="p">(</span><span class="s1">&#39;/home/jovyan/hadoop_example/shakespeare&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">shakespeare</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">textFile</span><span class="p">(</span><span class="s1">&#39;hadoop_example/shakespeare/*&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14311,7 +14272,7 @@ DUMP X;
 <div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark.sql</span> <span class="k">import</span> <span class="n">SparkSession</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
 
 <span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">(</span><span class="n">sc</span><span class="p">)</span>
 
@@ -14662,8 +14623,8 @@ only showing top 2 rows
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>351
-111
+<pre>374
+88
 </pre>
 </div>
 </div>
@@ -14677,7 +14638,7 @@ only showing top 2 rows
 <div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark.ml.feature</span> <span class="k">import</span> <span class="n">RFormula</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark.ml.feature</span> <span class="kn">import</span> <span class="n">RFormula</span>
 
 <span class="n">formula</span> <span class="o">=</span> <span class="n">RFormula</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="s1">&#39;chd ~ .&#39;</span><span class="p">,</span> <span class="n">featuresCol</span><span class="o">=</span><span class="s1">&#39;features&#39;</span><span class="p">,</span> <span class="n">labelCol</span><span class="o">=</span><span class="s1">&#39;label&#39;</span><span class="p">)</span>
 
@@ -14703,7 +14664,7 @@ only showing top 2 rows
 <pre>+---+-------+----+---------+-------+-----+-------+-------+---+---+--------------------+-----+
 |sbp|tobacco| ldl|adiposity|famhist|typea|obesity|alcohol|age|chd|            features|label|
 +---+-------+----+---------+-------+-----+-------+-------+---+---+--------------------+-----+
-|102|    0.4|3.41|    17.22|Present|   56|  23.59|   2.06| 39|  1|[102.0,0.4,3.41,1...|  1.0|
+|101|   0.48|7.26|     13.0| Absent|   50|  19.82|   5.19| 16|  0|[101.0,0.48,7.26,...|  0.0|
 +---+-------+----+---------+-------+-----+-------+-------+---+---+--------------------+-----+
 only showing top 1 row
 
@@ -14740,7 +14701,7 @@ only showing top 1 row
 <div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark.ml.classification</span> <span class="k">import</span> <span class="n">LogisticRegression</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark.ml.classification</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
 
 <span class="n">lr</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">maxIter</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">regParam</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
 
@@ -14764,8 +14725,8 @@ only showing top 1 row
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Coefficients: [0.008408247604829246,0.0819338712417374,0.1844407014226751,0.031730852428542095,-0.9351098151988192,0.03907230665069162,-0.09409933142418063,0.0016123733510384239,0.028466557617748908]
-Intercept: -4.259414174733452
+<pre>Coefficients: [0.009260570445916523,0.0788486946420192,0.1662444813477797,0.022566142657327527,-0.7041656467563279,0.040871728462501714,-0.06983394060234696,-0.006510927409719812,0.04231159447367855]
+Intercept: -5.422972995540954
 </pre>
 </div>
 </div>
@@ -14800,8 +14761,8 @@ Intercept: -4.259414174733452
 <pre>+---+-------+----+---------+-------+-----+-------+-------+---+---+--------------------+-----+--------------------+--------------------+----------+
 |sbp|tobacco| ldl|adiposity|famhist|typea|obesity|alcohol|age|chd|            features|label|       rawPrediction|         probability|prediction|
 +---+-------+----+---------+-------+-----+-------+-------+---+---+--------------------+-----+--------------------+--------------------+----------+
-|101|   0.48|7.26|     13.0| Absent|   50|  19.82|   5.19| 16|  0|[101.0,0.48,7.26,...|  0.0|[2.00202242646562...|[0.88100925630563...|       0.0|
-|108|    0.0|1.43|    26.26| Absent|   42|  19.38|    0.0| 16|  0|[108.0,0.0,1.43,2...|  0.0|[2.91657410259036...|[0.94865969878719...|       0.0|
+|108|    3.0|1.59|    15.23| Absent|   40|  20.09|  26.64| 55|  0|[108.0,3.0,1.59,1...|  0.0|[1.89684801054186...|[0.86953436653892...|       0.0|
+|109|    1.2|6.14|    29.26| Absent|   47|  24.72|  10.46| 40|  0|[109.0,1.2,6.14,2...|  0.0|[1.52305587620415...|[0.82098803319683...|       0.0|
 +---+-------+----+---------+-------+-----+-------+-------+---+---+--------------------+-----+--------------------+--------------------+----------+
 only showing top 2 rows
 
@@ -14846,7 +14807,7 @@ only showing top 2 rows
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Test accuracy: 0.78
+<pre>Test accuracy: 0.81
 </pre>
 </div>
 </div>
@@ -14861,7 +14822,7 @@ only showing top 2 rows
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># for AUC</span>
-<span class="kn">from</span> <span class="nn">pyspark.ml.evaluation</span> <span class="k">import</span> <span class="n">BinaryClassificationEvaluator</span>
+<span class="kn">from</span> <span class="nn">pyspark.ml.evaluation</span> <span class="kn">import</span> <span class="n">BinaryClassificationEvaluator</span>
 
 <span class="n">evaluator</span> <span class="o">=</span> <span class="n">BinaryClassificationEvaluator</span><span class="p">(</span><span class="n">rawPredictionCol</span><span class="o">=</span><span class="s1">&#39;rawPrediction&#39;</span><span class="p">)</span>
 <span class="n">auc</span> <span class="o">=</span> <span class="n">evaluator</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">pred_df</span><span class="p">)</span>
@@ -14882,7 +14843,7 @@ only showing top 2 rows
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Test AUC: 0.83
+<pre>Test AUC: 0.81
 </pre>
 </div>
 </div>
@@ -14900,11 +14861,11 @@ only showing top 2 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark.ml.classification</span> <span class="k">import</span> <span class="n">RandomForestClassifier</span>
-<span class="kn">from</span> <span class="nn">pyspark.ml.evaluation</span> <span class="k">import</span> <span class="n">MulticlassClassificationEvaluator</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark.ml.classification</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">pyspark.ml.evaluation</span> <span class="kn">import</span> <span class="n">MulticlassClassificationEvaluator</span>
 
 <span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">numTrees</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
 
@@ -14932,7 +14893,7 @@ only showing top 2 rows
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Test accuracy: 0.75
+<pre>Test accuracy: 0.72
 </pre>
 </div>
 </div>
@@ -14943,7 +14904,7 @@ only showing top 2 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">evaluator</span> <span class="o">=</span> <span class="n">BinaryClassificationEvaluator</span><span class="p">(</span><span class="n">rawPredictionCol</span><span class="o">=</span><span class="s1">&#39;rawPrediction&#39;</span><span class="p">)</span>
@@ -14965,7 +14926,7 @@ only showing top 2 rows
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Test AUC: 0.79
+<pre>Test AUC: 0.72
 </pre>
 </div>
 </div>
